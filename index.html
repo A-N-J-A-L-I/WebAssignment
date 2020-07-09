@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<!--[if IE]>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+
+    <link href="IEStyleSheet.css" rel="stylesheet" />
+    <![endif]-->
+
+    <!--[if !IE]> -->
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" media="only screen" />
+    <link href="MobileStyleSheet.css" rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px) , only screen and (-webkit-min-device-pixel-ratio: 2) , screen and (-webkit-device-pixel-ratio:1.5)" />
+    <!-- <![endif]-->
+
+<!--[if IEMobile]> 
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+
+    <link href="MobileStyleSheet.css" rel="stylesheet" />
+<![endif]-->
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: lightseagreen;
+  
+}
+.box1 {
+  border: 2px solid red;
+  margin-left: 50px;  
+  margin-right: 50px;
+  padding-left: 16px;
+  text-align: left;
+  margin-top: 0px;
+  padding-top: 0px;
+  border-collapse: collapse;
+  width: 93.5%;
+  
+}
+.box2 {
+  border: 2px solid red;
+  margin-left: 50px; 
+  margin-right: 50px; 
+  padding-left: 16px;
+  text-align: left;
+  margin-top: 0px;
+  padding-top: 0px;
+  display: inline-block;
+  clear: both;
+  border-collapse: collapse;
+  column-count: 3;
+  column-gap: 40px;
+  column-rule: 1px solid lightblue;
+  
+}
+.box3 {
+  border: 2px solid red;
+  margin-left: 50px; 
+  margin-right: 50px; 
+  padding-left: 16px;
+  text-align: left;
+  margin-top: 0px;
+  padding-top: 0px;
+  clear: both;
+  border-collapse: collapse;
+   column-count: 2;
+  column-gap: 40px;
+  column-rule: 1px solid red;
+
+  
+}
+.box4 {
+  border: 2px solid red;
+  margin-left: 50px; 
+  margin-right: 750px; 
+  padding-left: 16px;
+  text-align: left;
+  margin-top: 2px;
+  padding-top: 4px;
+  clear: both;
+ float: left;
+  
+}
+.box5 {
+  border: 2px solid red;
+  float: left;
+  margin-left: 800px; 
+  margin-right: 50px; 
+  padding-left: 16px;
+  text-align: left;
+  margin-top: 2px;
+  padding-top: 4px;
+  clear: both;
+ 
+  
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+.mobileHide { display: inline;}
+   /* Smartphone Portrait and Landscape */
+   @media only screen
+   and (min-device-width : 320px)
+   and (max-device-width : 480px){  .mobileHide { display: none;}}
+
+
+.btn{
+
+  border: none;
+  background-color: cyan;
+  color: rgb(19, 230, 245);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-right: 0ex;
+  border-top: 0ex;
+}
+.column {
+  float: left;
+  width: 50%;
+  height: 80%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+   
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="#Logo" >Logo</a>
+  <a href="#home" class="active">Home</a>
+  <a href="#Produkte">Produkte</a>
+  <a href="#Kalender">Kalender</a>
+  <a href="#Scheduler">Scheduler</a>
+  <a href="#Kollegen">Kollegen</a>
+  <a href="#Buchungen">Buchungen</a>
+  <a href="#Fortschritt">Fortschritt</a>
+  <a style="float: right;margin-right: 590px;" href="#Weiterbiuldng"> |   Weiterbiuldng</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fas fa-bars"></i>
+  </a>
+</div>
+
+<h2 style="margin-left:50px">Dashboard</h2> 
+
+<div class = "box1">
+  <h2>
+    <b>  Profile  </b>
+    <p class = "fas fa-angle-down" style="font-size: 30px;color: teal">
+    <button style="background-color: rgb(37, 226, 154);width: 250px;height:40px;margin-left: 950px;float: right;color: white;text-align: center;font-family:initial;border: ivory">View Profile </button>
+    </p>
+  </h2>
+
+    <p style="line-height: 7px"> A car (or automobile) is a wheeled motor vehicle used for transportation</p>
+    <p style="line-height: 7px">Cars are also one of the most pervasive devices, with a typical American family owning two cars.       </p>
+    
+    <p style="float: left"><img src="images.jpg" alt="image" style="width:270px;height:150px;margin-right:15px;"> 
+    <h3 style="margin-left: 170px"><b>Contact Details : </b> </h3>
+    
+    <ul style = "margin-left: 140px;";style="margin-top:0px;color:black">
+        <li class="fas fa-home" style="font-size :18px">   Kalka Ji,New Delhi</li><br>
+        <li class="fas fa-phone" style="font-size:18px">     +91-9454516012</li><br>
+        <li class= "fas fa-user" style="font-size:18px">     John David</li><br>
+        <li class=" fas fa-envelope" style="font-size:18px"><a href= "jdavid@jaskc.com">          jdavid@jaskc.com </a></li><br>
+        <li class="fas fa-info" style="font-size:18px"><a href = "  johndavidwebsite.com">                    johndavidwebsite.com</a></li>
+    </ul>    
+</div>    
+<div class="mobileHide">
+<div class="box2">
+    <h3 style="column-span: all;margin-top: 0px"><b>Ipsum Dolor Sit Amet</b> </h3> 
+    <h4><b>Lorem ipsum dolor sit amet</b></h4>
+     <p column=1>consectetuer adipiscing elit, abbsua jsialu qoascm  nxkalsic sed diam nonummy nibh euismod tincidunt ut laoreet bvghgdcj bvmjrk dolore magna aliquam jvhzkcv cbjskzdghv  chjxgj dsbkjbsHCJbc ghcfhi kgjk </p>
+     <button style="border:2px solid turquoise;margin-left:80px;width:250px;height:40px ;color:white ;background-color:rgb(37, 247, 194);margin-bottom: 0px">dfbvkshdgv</button> 
+     <h4 ><b>erat volutpat</b></h4>
+     Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat
+     savhcjhvac, jv, ,jhzxg ,hjaskjnkjLBXHl. zBalch;KAdxzknxkjn j Jsjdbcskjbdbcl hxcvkdshcdkjxzc kjcsxhih sui csdghcyu sbz cbzhxgcyuz cbzhkj
+     
+     <button style="border:2px solid turquoise;margin-left:80px;width:250px;height:40px ;color:white ;background-color:rgb(37, 247, 194);margin-bottom: 0px">dfbvkshdgv</button> 
+     <h4 column=3   ><b>erat volutpat</b></h4>
+      ulla facilisis aeros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit N SALV AL xnsakjs aiuwv gaugue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+      <button style="border:2px solid turquoise;margin-left:10px;position:relative;width:250px;height:40px ;border:2px solid turquoise;color:turquoise;background-color:white;margin-bottom: 0px">dfbvkshdgv</button> 
+
+    </div>
+  </div>
+   <div class="box3">
+    <p > <h3 style="display: inline"><b>Stundenanfragen</b> </h3>
+        <a style="float: left; margin-left: 550px; margin-top:-20px; " href = akjsbdvaivad.com>Alla Anfragen  <p class = "fas fa-angle-down" style="font-size: 20px;color: lightskyblue"></p></a>
+    </p><div class="row">
+        <div class="column" style="background-color:white;border-bottom: 1px solid lightblue;width:99%">
+           <p class='far fa-calendar-alt' style='font-size:20px;margin-left: 15px'>
+            Mr. Saurabh <t> 12:00 p.m </t>  Mr.Anuj Goel
+          </p>
+        </div>
+        <div class="column" style="background-color:white;border-bottom: 1px solid lightblue;width:99%">
+            <p class='far fa-calendar-alt' style='font-size:20px;margin-left: 15px'>
+                Mr. Suresh<t> 10:00 p.m </t>  Mrs.Anuja
+              </p>        </div>
+       
+        <div class="column" style="background-color:white;border-bottom: 1px solid lightblue;width:99%">
+            <p class='far fa-calendar-alt' style='font-size:20px;margin-left: 15px'>
+                Mrs. Rabhita <t> 12:20 p.m </t>  Mrs.Anushka Gill
+              </p>        </div>
+      </div>
+      
+      <p > <h3 style="display: inline"><b>Schularenfragen</b> </h3>
+        <a style="float: left; margin-left: 470px; margin-top:-20px; " href = akjsbdvaivad.com>Alla Anfragen | Alle Produkte <p class = "fas fa-angle-down" style="font-size: 20px;color: lightskyblue"></p></a></p>
+    <div class="row">
+            <div class="column" style="background-color:white;border-bottom: 1px solid lightblue;width:97%">
+            <p class='far fa-grin-beam' style='font-size:20px;margin-left: 15px'>Kelvin Ray Meets Harry Chris</p>
+        </div>
+        <div class="column" style="background-color:white;border-bottom: 1px solid lightblue;width:97%">
+            <p class='far fa-grin-beam' style='font-size:20px;margin-left: 15px'>Linda Resta Meets Meetakshi Chhel</p>
+        </div>
+        <div class="column" style="background-color:white;border-bottom: 1px solid lightblue;width:97%">
+            <p class='far fa-grin-beam' style='font-size:20px;margin-left: 15px'>Katy Roy Meets Laury Cherry</p>
+        </div>
+      </div>
+    </div>
+    <p style="float: left">
+    <div class="box4">
+       <p > <h3 style="display: inline"><b>Kalender</b> </h3>
+        <a style="float: left; margin-left: 550px; margin-top:-20px; " href = akjsbdvaivad.com>Kalender | Heute <p class = "fas fa-angle-down" style="font-size: 20px;color: lightskyblue"></p></a></p>
+        <div class="row">
+            <div class="column" style="background-color:white;border-bottom: 1px solid lightblue;width:97%">
+                <p class='far fa-calendar-alt' style='font-size:20px;margin-left: 15px'>
+                    Mr. Ronit <t> 12:20 p.m </t>  Mrs.Jyotsana
+                  </p>               </div>
+            <div class="column" style="background-color:white;border-bottom: 1px solid lightblue;width:97%">
+                <p class='far fa-calendar-alt' style='font-size:20px;margin-left: 15px'>
+                    Mrs. Reena <t> 12:20 p.m </t>  Mrs.Anu
+                  </p>               </div>
+            <div class="column" style="background-color:white;border-bottom: 1px solid lightblue;width:97%">
+                <p class='far fa-calendar-alt' style='font-size:20px;margin-left: 15px'>
+                    Mr. Rahul <t> 12:20 p.m </t>  Mr. Banti 
+                  </p>               </div>
+            <div class="column" style="background-color:white;border-bottom: 1px solid lightblue;width:97%">
+                <p class='far fa-calendar-alt' style='font-size:20px;margin-left: 15px'>
+                    Mr.Paul <t> 12:20 p.m </t>  Mr. Jam
+                  </p>               </div>
+            <div class="column" style="background-color:white;border-bottom: 1px solid lightblue;width:97%">
+                <p class='far fa-calendar-alt' style='font-size:20px;margin-left: 15px'>
+                    Mr. Horry <t> 12:20 p.m </t>  Mrs.Amy
+                  </p>               </div>
+          </div>
+    
+    </div>
+    <div class="box5" style="margin-top: -210px">
+        <p > <h3 style="display: inline"><b>Schulerforsctichht</b> </h3>
+         <a style="float: left; margin-left: 520px; margin-top:-20px; " href = akjsbdvaivad.com>Alle Scheuler<p class = "fas fa-angle-down" style="font-size: 20px;color: lightskyblue"></p></a></p>
+         <div class="row">
+             <div class="column" style="background-color:white;border-bottom: 1px solid lightblue;width:97%">
+                <p class='far fa-grin-beam' style='font-size:20px;margin-left: 15px'>Alle Scheuler </p><t style="margin-left: 60px;"> Fortschritt : </t>
+                <div class="w3-light-grey" style="float: right;margin-right: 290px;">
+                    
+                    <div class="w3-container w3-green w3-center" style="width:15%">15%</div>
+                  </div><br>
+            </div>
+             <div class="column" style="background-color:white;border-bottom: 1px solid lightblue;width:97%">
+                <p class='far fa-grin-beam' style='font-size:20px;margin-left: 15px'>Tim James </p><t style="margin-left: 80px;"> Fortschritt : </t>
+                <div class="w3-light-grey" style="float: right;margin-right: 290px;">
+                    <div class="w3-container w3-red w3-center" style="width:50%">50%</div>
+                  </div><br>
+             </div>
+             <div class="column" style="background-color:white;border-bottom: 1px solid lightblue;width:97%">
+                <p class='far fa-grin-beam' style='font-size:20px;margin-left: 15px'>Harley </p><t style="margin-left: 110px;"> Fortschritt : </t>
+                <div class="w3-light-grey" style="float: right;margin-right: 290px;">
+                    <div class="w3-container w3-blue w3-center" style="width:75%">75%</div>
+                  </div><br>
+             </div>
+             <div class="column" style="background-color:white;border-bottom: 1px solid lightblue;width:97%">
+                <p class='far fa-grin-beam' style='font-size:20px;margin-left: 15px'>Queen Davidson </p><t style="margin-left: 30px;"> Fortschritt : </t>
+                <div class="w3-light-grey" style="float: right;margin-right: 290px;">
+                    <div class="w3-container w3-green w3-center" style="width:35%">35%</div>
+                  </div><br>
+             </div>
+             <div class="column" style="background-color:white;border-bottom: 1px solid lightblue;width:97%">
+                <p class='far fa-grin-beam' style='font-size:20px;margin-left: 15px'>John Betley </p><t style="margin-left: 70px;"> Fortschritt : </t>
+                <div class="w3-light-grey" style="float: right;margin-right: 290px;">
+                    <div class="w3-container w3-red w3-center" style="width:85%">85%</div>
+                  </div><br>
+             </div>
+           </div>
+     
+     </div></p>
+     <div class="box4">
+        <p > <h3 style="display: inline"><b>Kollegen</b> </h3>
+         <a style="float: left; margin-left: 500px; margin-top:-20px; " href = akjsbdvaivad.com>Uberischt | Alle Kollegen <p class = "fas fa-angle-down" style="font-size: 20px;color: lightskyblue"></p></a></p>
+         <div class="row">
+             <div class="column" style="background-color:white;border-bottom: 1px solid lightblue;width:97%">
+                <p class='far fa-grin-beam' style='font-size:20px;margin-left: 15px'>Alle Scheuler </p>
+             </div>
+             <div class="column" style="background-color:white;border-bottom: 1px solid lightblue;width:97%">
+                <p class='far fa-grin-beam' style='font-size:20px;margin-left: 15px'>Alle Scheuler </p>
+             </div>
+             <div class="column" style="background-color:white;border-bottom: 1px solid lightblue;width:97%">
+                <p class='fa fa-search' style='font-size:20px;margin-left: 15px'>Alle Scheuler </p>
+             
+           </div>
+     
+     </div>
+   
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
